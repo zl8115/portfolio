@@ -1,0 +1,106 @@
+import React from 'react';
+
+// Material UI Imports
+// import { makeStyles } from '@material-ui/core/styles';
+import Stepper from '@material-ui/core/Stepper';
+import Step from '@material-ui/core/Step';
+// import StepLabel from '@material-ui/core/StepLabel';
+import StepContent from '@material-ui/core/StepContent';
+import StepButton from '@material-ui/core/StepButton';
+// import Button from '@material-ui/core/Button';
+// import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+
+function getSteps() {
+  const stepList = [
+    'Oct 2019 - Present: Work',
+    'Oct 2015 - Jun 2019: Studies',
+    'Sep 2012 - Jul 2015: Studies',
+    'Jan 2009 - Jun 2012: Studies'
+  ]
+  return stepList;
+}
+
+function getStepTitle(step) {
+  switch(step) {
+    case 0:
+      return `Product Lead & Co-Founder`;
+    case 1:
+      return `MEng in Biomedical Engineering`;
+    case 2:
+      return `International Baccalaurreate & IGCSE`;
+    case 3:
+      return `Lower Secondary Assessment (PMR)`;
+    default:
+      return 'ERROR LOCATION';
+  }
+}
+
+function getStepLocation(step){
+  switch(step) {
+    case 0:
+      return `ELIZE.IO, UNITED KINGDOM`;
+    case 1:
+      return `IMPERIAL COLLEGE LONDON, UNITED KINGDOM`;
+    case 2:
+      return `WINDERMERE SCHOOL, UNITED KINGDOM`;
+    case 3:
+      return `VICTORIA INSTITUTION, MALAYSIA`;
+    default:
+      return 'ERROR LOCATION';
+  }
+}
+
+function getStepContent(step) {
+  switch (step) {
+    case 0:
+      return `My main duties in Elize.io is as a Web Developer and Machine Learning Engineer. I work with developing the web application and building the Natural Language Processing (NLP) models used in the backend. The skills developed are AWS web deployment, Google Cloud Services, React.js, Node.js, Python, Pandas, PyTorch, Tensorflow.`;
+    case 1:
+      return `During this 4 year undergraduate Masters course, we had the option to choose our subjects and streams for our 3rd and 4th (final) year. I had chosen the Electrical and Electronic (EE) stream which led to me being exposed to statistical analysis techniques and methods. Amongst the modules I took were: Adaptive Signal Processing and Machine Intelligence; Advanced Signal Processing; Digital Biosignal Processing; Optimization; Pattern Recognition.`;
+    case 2:
+      return `I was given the opportunity to study in the UK at an earlier stage. This allowed me to develop a more International perspective of the world. This unique blend of education from Malaysia and United Kingdom gives me a unique perspective to the world.`;
+    case 3:
+      return `This was where I spent most of my secondary school education excluding the final year and a half. It was during these years that I developed most of my traits and virtues and even embodying the school motto of "To Be Yet Wiser; To Be a Scholar, Sportsman and a Gentleman". As a result, I am humble, focused, hardworking and curious.`;
+    default:
+      return 'Unknown step';
+  }
+}
+
+export default function CareerStepper() {
+  const [activeStep, setActiveStep] = React.useState(0);
+  const steps = getSteps();
+
+  const handleNext = () => {
+    setActiveStep(prevActiveStep => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep(prevActiveStep => prevActiveStep - 1);
+  };
+
+  const handleReset = () => {
+    setActiveStep(0);
+  };
+
+  const handleStep = step => () => {
+    setActiveStep(step);
+  };
+
+  return(
+    <Stepper nonLinear activeStep={activeStep} orientation="vertical">
+      {steps.map((label, index) => (
+        <Step key={label}>
+          <StepButton onClick={handleStep(index)}>
+            {label}
+          </StepButton>
+          <StepContent>
+            <Typography variant="h6">{getStepTitle(index)}</Typography>
+            <Typography variant="subtitle2">{getStepLocation(index)}</Typography>
+            <br />
+            <Typography>{getStepContent(index)}</Typography>
+          </StepContent>
+        </Step>
+      ))}
+    </Stepper>
+  )
+}
