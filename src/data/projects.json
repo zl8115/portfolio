@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Kaggle's Titanic: Machine Learning From Disaster Challenge",
+    "description": "Last Updated 23/9/2020",
+    "image": "titanic.jpg",
+    "link": "https://github.com/zl8115/kaggle-titanic",
+    "gitLink": "https://github.com/zl8115/kaggle-titanic",
+    "meta": ["python", "machine learning"],
+    "content": "My first attempt at a Kaggle competition which is a simple <strong>Binary Classification problem</strong> or predicting Survival by learning from the RMS Titanic Passengers' Dataset. The steps taken in this project were mainly: <strong>Data Cleaning &amp; Validation</strong> to ensure the data was clean, complete and valid; <strong>Explatory Data Analysis (EDA)</strong> to better understand and create relevant features; and <strong>Model Selection and Parameter Tuning</strong> to select the model best suitable for this Binary Classification task.<br/><br/><em>Results:</em> <strong>Majority Voting Classifier</strong> scoring <strong>~0.779</strong>."
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "Last Updated 23/9/2020",
+    "image": "Portfolio.PNG",
+    "link": "https://github.com/zl8115/portfolio",
+    "gitLink": "https://github.com/zl8115/portfolio",
+    "meta": ["javascript", "React.js"],
+    "content": "The repository for this portfolio website that uses <strong>React.js</strong>. This website was made as a quick way to showcase my projects and my ability as a web developer. As I update this site, there will be hopefully be more display of my skills. This repository will attempt to display some demonstration of <strong>API consumption</strong> by mimicking <em>json</em> data to dynamically \"alter\" the content of this page."
+  },
+  {
+    "title": "A Focal Tracking System Design",
+    "description": "Last Updated 26/8/2019",
+    "image": "FYP.png",
+    "link": "https://github.com/zl8115/fyp",
+    "gitLink": "https://github.com/zl8115/fyp",
+    "meta": ["python", "matlab"],
+    "content": "This project was done as a summer research project and part of my final year in university. The aim of the project is to design an optical system that is able to maintain the focal plane by driving a tunable lens using a feedback loop of the acquired image - essentially develop a computationally cheap and small real-time auto-focus system.<br/><br/>Behind the technicalities, the methods primarily involved in this project included: <strong>Image Processing</strong>, <strong>Signal Processing</strong> methods and <strong>Optimization</strong> algorithms."
+  },
+  {
+    "title": "Autonomous Racer - ALBiR 2019",
+    "description": "Last Updated 1/4/2019",
+    "image": "HotWheels.JPG",
+    "link": "https://github.com/zl8115/HotWheels",
+    "gitLink": "https://github.com/zl8115/HotWheels",
+    "meta": ["python", "matlab"],
+    "content": "Part of my final year in university this module and project involved creating an autonomous racer using a Raspberry Pi3 and a Pixy2 Camera. This is the code that won my team 1st place in the final race. This project involved using <strong>Python</strong> to program the autonomous racer. However for the remainder of the module, <strong>Matlab</strong> was also used to simulate pursuit tracking amongst other simulations."
+  }
+]

@@ -1,14 +1,11 @@
+// Library Imports
 import React from 'react';
 
 // Material UI Imports
-// import { makeStyles } from '@material-ui/core/styles';
-import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
-// import StepLabel from '@material-ui/core/StepLabel';
-import StepContent from '@material-ui/core/StepContent';
 import StepButton from '@material-ui/core/StepButton';
-// import Button from '@material-ui/core/Button';
-// import Paper from '@material-ui/core/Paper';
+import StepContent from '@material-ui/core/StepContent';
+import Stepper from '@material-ui/core/Stepper';
 import Typography from '@material-ui/core/Typography';
 
 function getSteps() {
@@ -66,21 +63,22 @@ function getStepContent(step) {
   }
 }
 
+// MAIN Function
 export default function CareerStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
 
-  const handleNext = () => {
-    setActiveStep(prevActiveStep => prevActiveStep + 1);
-  };
+  // const handleNext = () => {
+  //   setActiveStep(prevActiveStep => prevActiveStep + 1);
+  // };
 
-  const handleBack = () => {
-    setActiveStep(prevActiveStep => prevActiveStep - 1);
-  };
+  // const handleBack = () => {
+  //   setActiveStep(prevActiveStep => prevActiveStep - 1);
+  // };
 
-  const handleReset = () => {
-    setActiveStep(0);
-  };
+  // const handleReset = () => {
+  //   setActiveStep(0);
+  // };
 
   const handleStep = step => () => {
     setActiveStep(step);

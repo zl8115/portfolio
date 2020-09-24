@@ -8,11 +8,24 @@ export default function ({ children }) {
   const defaultDarkTheme = useMediaQuery('(prefers-color-scheme: dark)');
 
   const [darkTheme, setDarkTheme] = useState(defaultDarkTheme);
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState(createMuiTheme());
 
   useEffect(
     () => {
       setTheme(createMuiTheme({
+        overrides: {
+          MuiCard: {
+            root: {
+              padding: '15px',
+              margin: '15px',
+              [theme.breakpoints.down('xs')]:{
+                marginLeft: '-15px',
+                marginRight: '-15px',
+                padding: '15px'
+              },
+            },
+          },
+        },
         palette: {
           type: darkTheme ? 'dark' : 'light',
         },

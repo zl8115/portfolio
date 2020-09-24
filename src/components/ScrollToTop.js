@@ -1,3 +1,4 @@
+// Library Imports
 import { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 // import ReactGA from "react-ga";
@@ -16,7 +17,7 @@ function ScrollToTop({ history }) {
     return () => {
       unlisten();
     }
-  }, []);
+  });
 
   return (null);
 }
