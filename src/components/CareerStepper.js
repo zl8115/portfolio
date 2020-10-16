@@ -51,9 +51,9 @@ function getStepLocation(step){
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return `My main duties in Elize.io is as a Web Developer and Machine Learning Engineer. I work with developing the web application and building the Natural Language Processing (NLP) models used in the backend. The skills developed are AWS web deployment, Google Cloud Services, React.js, Node.js, Python, Pandas, PyTorch, Tensorflow.`;
+      return `My main duties in Elize.io is as a Full Stack Engineer and Machine Learning Engineer. I worked with developing the web application and building the Natural Language Processing (NLP) models used in the backend. The technology used are JavaScript, Express, React, Node, Python, MongoDB, Docker, AWS web deployment and Google Cloud Services`;
     case 1:
-      return `During this 4 year undergraduate Masters course, we had the option to choose our subjects and streams for our 3rd and 4th (final) year. I had chosen the Electrical and Electronic (EE) stream which led to me being exposed to statistical analysis techniques and methods. Amongst the modules I took were: Adaptive Signal Processing and Machine Intelligence; Advanced Signal Processing; Digital Biosignal Processing; Optimization; Pattern Recognition.`;
+      return `During the 3rd and 4th (final) year of the 4-year undergraduate course, I had chosen the Electrical and Electronic (EE) stream which exposed me to statistical analysis techniques and methods. Amongst the modules I took were: Adaptive Signal Processing and Machine Intelligence; Advanced Signal Processing; Digital Biosignal Processing; Optimization; Pattern Recognition.`;
     case 2:
       return `I was given the opportunity to study in the UK at an earlier stage. This allowed me to develop a more International perspective of the world. This unique blend of education from Malaysia and United Kingdom gives me a unique perspective to the world.`;
     case 3:

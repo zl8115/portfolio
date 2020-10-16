@@ -60,7 +60,7 @@ export default function Resume(props){
         <CardActions style={{justifyContent:"center"}}>
           <Button
             className="btn btn-primary"
-            href={"https://drive.google.com/file/d/1iXeKB7uMlQLumX2gGUODToY6ilk2pP7h/view?usp=sharing"}
+            href={"https://drive.google.com/file/d/1zkI-YfqIpSY3YBfAZa-U7nsbw6cA-Mq2/view?usp=sharing"}
             color="primary"
             variant="contained"
           >

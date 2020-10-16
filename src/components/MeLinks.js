@@ -40,14 +40,14 @@ export default function MeLinks(){
         </IconButton>
       </Tooltip>
       
-      <Tooltip title="Gaming YouTube Channel">
+      <Tooltip title="YouTube Gaming Channel">
         <IconButton href="https://www.youtube.com/channel/UCZfHlEteLxb4YlBRgSqGBjA">
           <YouTubeIcon/>
         </IconButton>
       </Tooltip>
 
       <Tooltip title="Email">
-        <IconButton href="mailto:ze.lum@elize.io">
+        <IconButton href="mailto:ze.rong96@gmail.com">
           <EmailIcon/>
         </IconButton>
       </Tooltip>

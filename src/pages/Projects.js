@@ -13,11 +13,52 @@ import Typography from '@material-ui/core/Typography';
 
 // Material UI Icon Imports
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WebIcon from '@material-ui/icons/Web';
+
+// Context Import
+import { useTheme } from '../context/Theme';
 
 // Data Import
 import projectsData from '../data/projects.json';
 
+// MAIN Function
 export default function Resume(props){
+
+  const { darkTheme } = useTheme(); // Load Theme Context
+
+  function chipColor(metaTag){
+    let color = (darkTheme) ? "rgba(255, 255, 255, 0.23)" : "rgba(0, 0, 0, 0.23)";
+
+    switch(metaTag){
+      case 'python':
+        color = "";
+        break;
+      case 'machine learning':
+        color = "";
+        break;
+      case 'React.js':
+        color = "";
+        break;
+      case 'Express.js':
+        color = "";
+        break;
+      case 'REST API':
+        color = "";
+        break;
+      case 'matlab':
+        color = "";
+        break;
+      
+            
+      default:
+        break;
+    }
+    
+    // color = "#ebc400";
+
+    return color;
+  }
+
   return(
     <Container maxWidth="md">
       <Helmet>
@@ -43,11 +84,18 @@ export default function Resume(props){
                     </IconButton>
                   </Tooltip>
                 }
+                {data.webLink &&
+                  <Tooltip title="Website Link">
+                    <IconButton href={data.webLink}>
+                      <WebIcon/>
+                    </IconButton>
+                  </Tooltip>
+                }
                 <br/>
                 {data.meta.map(tag => {
                   return(
                     <Chip
-                      style={{margin:'5px'}}
+                      style={{margin:'5px', borderColor: chipColor(tag)}}
                       label={tag}
                       clickable
                       variant="outlined"

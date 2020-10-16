@@ -76,7 +76,7 @@ function Home(props){
               Starting from a undergraduate Masters in Engineering (MEng) in Biomedical Engineering, the modules that most interested me were always related to Programming, Signal Analysis and Machine Learning.
               However, within these 4 years I had graduated with an uncertainy to pursue either Software Engineering or Data Science but what I did know was that I lacked the necessary skill and experience to pursue either.
               Then with a stroke of luck, I was given the opportunity to start a startup with a friend that allowed me to develop these skills.
-              This led to my past year working at Elize.io as a Software Developer, Machine Learning Engineer and Co-Founder allowing me to refine my skills and experience to finally realize the career I want to pursue: Data Science.
+              This led to my past year working at Elize.io as a Full Stack Engineer, Machine Learning Engineer and Co-Founder allowing me to refine my skills and experience to finally realize the career I want to pursue: Data Science.
               And thus, whilst I am still beginning my journey into Data Science, I would like any opportunity that can help me start my career in Data Science.
               <br/><br/>
               Besides my newly found passion in Data Science, there are other things I am passionate about which are Kendo and Gaming.

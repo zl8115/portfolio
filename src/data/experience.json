@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Full Stack Developer",
+    "company": "Elize.io, UK",
+    "startDate": "October 2019",
+    "endDate": "August 2020",
+    "description": "",
+    "details": [
+      "Designed and implemented a MERN (MongoDB, Express, React, Node) stack to develop the web application: <a href=\"https://elize.io\">https://elize.io</a>",
+      "Developed a Flask API that summarises documents using Topic Classification and Extractive Summarisation.",
+      "Engaged in customer development to learn the customer needs to develop their solutions.",
+      "Followed AGILE methodology to manage and plan SPRINT cycles to develop the technology.",
+      "Technology stack: JavaScript, Python, MongoDB, Docker, NGINX, AWS and Google Cloud."
+    ],
+    "meta": ["javascript", "python", "machine learning"]    
+  }
+]

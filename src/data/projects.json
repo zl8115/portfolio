@@ -9,13 +9,31 @@
     "content": "My first attempt at a Kaggle competition which is a simple <strong>Binary Classification problem</strong> or predicting Survival by learning from the RMS Titanic Passengers' Dataset. The steps taken in this project were mainly: <strong>Data Cleaning &amp; Validation</strong> to ensure the data was clean, complete and valid; <strong>Explatory Data Analysis (EDA)</strong> to better understand and create relevant features; and <strong>Model Selection and Parameter Tuning</strong> to select the model best suitable for this Binary Classification task.<br/><br/><em>Results:</em> <strong>Majority Voting Classifier</strong> scoring <strong>~0.779</strong>."
   },
   {
+    "title": "Elize.io Website",
+    "description": "Last Updated 13/7/2020",
+    "image": "Elize.png",
+    "link": "https://elize.io/",
+    "webLink": "https://elize.io/",
+    "meta": ["React.js", "Express.js", "REST API"],
+    "content": "This is the website and product of the startup, Elize.io, that I worked on. The website was designed using <strong>React.js</strong> and consumes the data from a <strong>Express.js-powered REST API</strong>. This is deployed using a <strong>Docker</strong> container on an <strong>AWS EC2</strong> instance.<br/><br/>Furthermore, behind the scenes there is a <strong>Flask-powered REST API</strong> that performs the <strong>Natural Language Processing (NLP) Summarization &amp; Topic Classification Tasks</strong>. This API also handles audio data conversion and document formatting."
+  },
+  {
     "title": "Personal Portfolio",
     "description": "Last Updated 23/9/2020",
     "image": "Portfolio.PNG",
     "link": "https://github.com/zl8115/portfolio",
     "gitLink": "https://github.com/zl8115/portfolio",
-    "meta": ["javascript", "React.js"],
-    "content": "The repository for this portfolio website that uses <strong>React.js</strong>. This website was made as a quick way to showcase my projects and my ability as a web developer. As I update this site, there will be hopefully be more display of my skills. This repository will attempt to display some demonstration of <strong>API consumption</strong> by mimicking <em>json</em> data to dynamically \"alter\" the content of this page."
+    "meta": ["React.js"],
+    "content": "The repository for this portfolio website that uses <strong>React.js</strong>. This website was made as a quick way to showcase my projects and my ability as a web developer. Hopefully as I update this site, there will be a wider display of my skills. <br/><br/> This repository will attempt to display some demonstration of <strong>API consumption</strong> by mimicking <em>json</em> data to dynamically \"alter\" the content of this page."
+  },
+  {
+    "title": "ICKC Website",
+    "description": "Last Updated 15/9/2019",
+    "image": "KendoWebsite.PNG",
+    "link": "https://www.union.ic.ac.uk/acc/kendo/index.php",
+    "webLink": "https://www.union.ic.ac.uk/acc/kendo/index.php",
+    "meta": ["PHP", "HTML", "CSS"],
+    "content": "Upon graduation and as a final gift to the Imperial College Kendo Club, I had decided to redesign this <strong>PHP</strong> website and even wrote the copy itself. The website itself was mainly built using <strong>HTML</strong> and <strong>CSS</strong> Bootstrap with some background PHP for some dynamic content (image gallery and etc). <br/><br/> As this website was made with me having little experience with web development, I feel this best demonstrates my improvements in the past year, at least in web design and development."
   },
   {
     "title": "A Focal Tracking System Design",

@@ -18,7 +18,7 @@ import WorkIcon from '@material-ui/icons/Work';
 export default function ResumeAccordian(props){
   return(
     <>
-      <ExpansionPanel defaultExpanded>
+      <ExpansionPanel >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -37,10 +37,10 @@ export default function ResumeAccordian(props){
             <em>October 2015 - June 2019</em>
             <br/>
             <ul>
-              <li><strong>1st Year (70%):</strong> Programming 1 (93%), Logic &amp; Digital Systems (71%), Mathematics 1 (66%), Bioengineering in Action (75%), Electrical Engineering 1 (48%), Electrical Engineering Labs (75%), Heat &amp; Mass Transport 1 (58%), Biomolecular Engineering 1 (73%), Molecules, Cells, Processes (66%), Medical Science 1 (63%), Vibrations &amp; Waves (71%), Mechanics 1 (84%)</li>
-              <li><strong>2nd Year (71%):</strong> Programming 2 (86%), Mathematics 2 (73%), Signals &amp; Systems (63%), Control Systems (62%), Electrical Engineering 2 (81.5%), Electromagnetics 2 (70%), Mechanics 2 Fluids (77%), Heat &amp; Mass Transport 2 (74%), Medical Science 2 (71%), Mechanics 2 SOlids (57%), Engineering Design Project (65.8%), Biomolecular Engineering 2 (66%)</li>
-              <li><strong>3rd Year (69%):</strong> Modelling in Biology (77%), Digital Biosignal Processing (87%), Image Processing (69%), Biomedical Instrumentation (62%), Advanced Signal Processing (53%), Group Project (78%), Control Engineering (65%), Finance &amp; Financial Management (69%), Entrepreneurship (63%), Digital Biosignal Processing (75%)</li>
               <li><strong>4th Year (70%):</strong> Adaptive Signal Processing &amp; Machine Intelligence (87%), Optimisation (62%), Pattern Recognition (67%), Computational Neuroscience (66%), Animal Locomotion &amp; Bioinspired Robots (72%), Business Economics (86%), Brain Machine Interfaces (64%), MEng Biomedical Engineering Individual Project (67%)</li>
+              <li><strong>3rd Year (69%):</strong> Modelling in Biology (77%), Digital Biosignal Processing (87%), Image Processing (69%), Biomedical Instrumentation (62%), Advanced Signal Processing (53%), Group Project (78%), Control Engineering (65%), Finance &amp; Financial Management (69%), Entrepreneurship (63%), Digital Biosignal Processing (75%)</li>
+              <li><strong>2nd Year (71%):</strong> Programming 2 (86%), Mathematics 2 (73%), Signals &amp; Systems (63%), Control Systems (62%), Electrical Engineering 2 (81.5%), Electromagnetics 2 (70%), Mechanics 2 Fluids (77%), Heat &amp; Mass Transport 2 (74%), Medical Science 2 (71%), Mechanics 2 Solids (57%), Engineering Design Project (65.8%), Biomolecular Engineering 2 (66%)</li>
+              <li><strong>1st Year (70%):</strong> Programming 1 (93%), Logic &amp; Digital Systems (71%), Mathematics 1 (66%), Bioengineering in Action (75%), Electrical Engineering 1 (48%), Electrical Engineering Labs (75%), Heat &amp; Mass Transport 1 (58%), Biomolecular Engineering 1 (73%), Molecules, Cells, Processes (66%), Medical Science 1 (63%), Vibrations &amp; Waves (71%), Mechanics 1 (84%)</li>
             </ul>
 
             <strong>International Baccalaureate - Bilingual Diploma (36/45)</strong>, Windermere School, United Kingdom
@@ -98,7 +98,7 @@ export default function ResumeAccordian(props){
         </ExpansionPanelDetails>
       </ExpansionPanel>
 
-      <ExpansionPanel defaultExpanded>
+      <ExpansionPanel >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -112,16 +112,15 @@ export default function ResumeAccordian(props){
 
         <ExpansionPanelDetails>
           <Typography variant="body" paragraph>
-            <strong>Product Lead</strong>, Elize.io, United Kingdom
+            <strong>Full Stack Engineer</strong>, Elize.io, United Kingdom
             <br/>            
             <em>October 2019 - August 2020</em>
             <br/>
             <ul>
-              <li>Dealt with customer development: interviewed and interacted directly with customers to identify and understand customer needs.</li>
-              <li>Followed AGILE methodology to manage and plan SPRINT cycles to develop the technology.</li>
               <li>Full-stack development using a MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
-              <li>Developed a Flask powered Python REST API that acts as an NLP Summarizer and Topic Classifier that summarizes documents into topics and bullet points.</li>
-              <li>Developed, deployed and mainted services using Docker, AWS EC2 and ECR.</li>
+              <li>Developed a Flask API that acts as an NLP Summarizer and Topic Classifier that summarizes documents into topics and bullet points.</li>
+              <li>Technology used: Docker, AWS EC2 &amp; ECR; Google Speech-to-Text, Analytics &amp; Cloud Storage;</li>
+              <li>Customer development: interviewed customers directly to identify customer needs.</li>
             </ul>
 
             <strong>Undergraduate Teaching Assistant</strong>, Imperial College London, United Kingdom
@@ -130,8 +129,6 @@ export default function ResumeAccordian(props){
             <br/>
             <ul>
               <li>Helped tutor 1st and 2nd year students to code in C and C++ programming (Programming 1 and 2 modules)</li>
-              <li>Developed a deeper understanding and appreciation for lower level programming languages.</li>
-              <li>Improved listening and communication skills from discussing problems and solutions.</li>
             </ul>
 
             <strong>Technology Project Manager</strong>, Awetrip, Malaysia/United Kingdom
@@ -139,9 +136,10 @@ export default function ResumeAccordian(props){
             <em>July 2017 - June 2018</em>
             <br/>
             <ul>
-              <li>First attempt at creating a startup during university days</li>
-              <li>As Technology Project Manager, I constructed and directed the timeline required for the project</li>
-              <li>Web Developer, used the LAMP (Laravel, Apache, MySQL, PHP) stack to develop the front-end and backend of the web platform.</li>
+              <li>Co-founded Awetrip and led the technology team of 3 to develop the web application.</li>
+              <li>Developed the main web platform using a LAMP (Laravel, Apache, MySQL, PHP) stack.</li>
+              <li>Deployed and maintained a WordPress blog on a subdomain for marketing.</li>
+              <li>Participated and won 1st place in iCUBE's CIPTA UK 2017 event that resulted in gaining the support of Cradle Fund Sdn Bhd, 1337 Ventures and Khazanah Nasional Bhd.</li>
             </ul>
 
             <strong>Cashier</strong>, De Market, Malaysia
@@ -157,13 +155,13 @@ export default function ResumeAccordian(props){
             <em>July 2016</em>
             <br/>
             <ul>
-              <li>Presented the app to both potential customers and investors. Developed an articulate mindset to persuade and promote the product that best fit the clients' interest.</li>
+              <li>Promoted the app to both potential customers and investors. Developed an articulate mindset to persuade and promote the product that best fit the clients' interest.</li>
             </ul>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
 
-      <ExpansionPanel defaultExpanded>
+      <ExpansionPanel >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -212,7 +210,7 @@ export default function ResumeAccordian(props){
         </ExpansionPanelDetails>
       </ExpansionPanel>
 
-      <ExpansionPanel defaultExpanded>
+      <ExpansionPanel >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3a-content"
