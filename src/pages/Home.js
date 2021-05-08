@@ -47,7 +47,7 @@ function Home(props){
         <title>Home | Ze Rong Lum</title>
         <meta
           name="description"
-          content="Ze Rong Lum, the best candidate for a Data Science role. A recent graduate and keen enthusiast of Statistical Analysis and Machine Learning looking for an opportunity to start a career in Data Science."
+          content="Ze Rong Lum, Software Engineer and keen enthusiast of Statistical Analysis and Machine Learning interested in Data Science."
         />
       </Helmet>
 
@@ -60,10 +60,10 @@ function Home(props){
               <strong>Ze Rong Lum</strong>
             </Typography>
             <Typography variant="h6">
-              MEng &amp; ACGI in Biomedical Engineering
+              Software Engineer at Micro Focus
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              Currently pursuing a career in Data Science
+              MEng &amp; ACGI in Biomedical Engineering
             </Typography>
             <MeLinks />
           </Grid>
@@ -72,14 +72,11 @@ function Home(props){
             <Typography variant="h4">About Me </Typography>
             <hr/>
             <Typography variant="subtitle1">
-              Originally from Kuala Lumpur, Malaysia, and having graduated from Imperial College London in 2019, I am currently pursuing a career in Data Science. 
-              Starting from a undergraduate Masters in Engineering (MEng) in Biomedical Engineering, the modules that most interested me were always related to Programming, Signal Analysis and Machine Learning.
-              However, within these 4 years I had graduated with an uncertainy to pursue either Software Engineering or Data Science but what I did know was that I lacked the necessary skill and experience to pursue either.
-              Then with a stroke of luck, I was given the opportunity to start a startup with a friend that allowed me to develop these skills.
-              This led to my past year working at Elize.io as a Full Stack Engineer, Machine Learning Engineer and Co-Founder allowing me to refine my skills and experience to finally realize the career I want to pursue: Data Science.
-              And thus, whilst I am still beginning my journey into Data Science, I would like any opportunity that can help me start my career in Data Science.
+              Originally from Kuala Lumpur, Malaysia, now a Software Engineer at Micro Focus, United Kingdom with an interest in Data Science. I graduated from Imperial College London in 2019 with a undergraduate Masters in Engineering (MEng) in Biomedical Engineering, taking up modules mostly related to Programming, Signal Analysis and Machine Learning.
+              After graduation I worked on a startup idea, Elize.io, as a Full Stack Engineer, Machine Learning Engineer and Co-Founder. My main role was to develop the web platform and the technology that was used to achieve automated transcription and key sentence extraction. This experience in web development and machine learning allowed me to refine my interest in Data Science.
+              Moving on from that startup, I currently work as a Software Engineer at Micro Focus where I am developing my software engineering skills following the best practices primarily in C/C++. My current role has me developing and maintaining new and old code; along with plenty of Software Testing and Debugging.
               <br/><br/>
-              Besides my newly found passion in Data Science, there are other things I am passionate about which are Kendo and Gaming.
+              Aside my interest in Data Science, there are other things I am passionate about which are Kendo and Gaming.
               Kendo is a Japanese Martial Arts that is based on traditional swordsmanship that I started during my days in university.
               What really makes me passionate about Kendo are the values and discipline that it embodies.
               On the other hand, my passion for Gaming is mainly in First Person Shooters (FPS) and grinding games like Warframe and Monster Hunter.

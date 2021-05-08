@@ -31,7 +31,7 @@ export default function Resume(props){
         <title>Resume | Ze Rong Lum</title>
         <meta
           name="description"
-          content="The resume or CV of Ze Rong Lum, the immediate candidate for a Data Science role. A detailed journey of myself and what I have achieved in my lifetime and how I have come to pursue a career in Data Science."
+          content="The resume or CV of Ze Rong Lum, Software Engineer with an interest in Data Science."
         />
       </Helmet>
 
@@ -44,7 +44,7 @@ export default function Resume(props){
               <strong>Ze Rong Lum</strong>
               </Typography>
             } 
-          subheader="A recent MEng graduate with a strong foundation in mathematics and engineering. Experienced in object-oriented programming; version control; full-stack development; and machine learning. I am autonomous, curious and methodological with a flair at project management and communication. "
+          subheader="A Software Engineer with a strong foundation in mathematics and engineering. Experienced in object-oriented programming; version control; full-stack development; and machine learning. I am autonomous, curious and methodological with a flair at project management and communication. "
           style={{textAlign:'center'}}
         />
 

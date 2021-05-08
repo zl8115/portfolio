@@ -112,6 +112,16 @@ export default function ResumeAccordian(props){
 
         <ExpansionPanelDetails>
           <Typography variant="body" paragraph>
+            <strong>Software Engineer</strong>, Micro Focus, United Kingdom
+            <br/>            
+            <em>January 2021 - Present</em>
+            <br/>
+            <ul>
+              <li>Develop and maintain code in C/C++.</li>
+              <li>Maintaining and upgrading legacy code.</li>
+              <li>Develop new readers to add support for new file formats.</li>
+            </ul>
+
             <strong>Full Stack Engineer</strong>, Elize.io, United Kingdom
             <br/>            
             <em>October 2019 - August 2020</em>
