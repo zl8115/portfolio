@@ -106,7 +106,7 @@ export default function Resume(props){
 
               <Grid item xs={12} md={8}>
                 <Typography variant="h4">
-                  <Link href="https://github.com/zl8115/kaggle-titanic" underline="none" color="inherit">
+                  <Link href={data.link} underline="none" color="inherit">
                       <strong>{data.title}</strong>
                   </Link>
                 </Typography>

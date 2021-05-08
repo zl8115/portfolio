@@ -21,7 +21,8 @@
     "title": "Personal Portfolio",
     "description": "Last Updated 23/9/2020",
     "image": "Portfolio.PNG",
-    "link": "https://github.com/zl8115/portfolio",
+    "link": "https://www.zeronglum.com",
+    "webLink": "https://www.zeronglum.com",
     "gitLink": "https://github.com/zl8115/portfolio",
     "meta": ["React.js"],
     "content": "The repository for this portfolio website that uses <strong>React.js</strong>. This website was made as a quick way to showcase my projects and my ability as a web developer. Hopefully as I update this site, there will be a wider display of my skills. <br/><br/> This repository will attempt to display some demonstration of <strong>API consumption</strong> by mimicking <em>json</em> data to dynamically \"alter\" the content of this page."
