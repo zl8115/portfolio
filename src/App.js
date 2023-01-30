@@ -20,34 +20,37 @@ import NotFound from './pages/NotFound';
 import NavBar from './components/NavBar';
 import ScrollToTop from './components/ScrollToTop';
 
+import { HelmetProvider } from "react-helmet-async";
+
 // MAIN Function
 export default function App() {
 
   return (
-    <Theme>
-      <CssBaseline />
-      <Router>
-        
-        <NavBar />
-        {/* <Container maxWidth="md" style={{marginTop:'90px'}}> */}
-        <Container maxWidth="false" style={{marginTop:'90px'}}>
-        <ScrollToTop/>
-        <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route exact path="/resume">
-            <Resume/>
-          </Route>
-          <Route exact path="/projects">
-            <Projects/>
-          </Route>
-          <Route>
-            <NotFound/>
-          </Route>            
-        </Switch>
-        </Container>
-      </Router>
-    </Theme>
+    <HelmetProvider>
+      <Theme>
+        <CssBaseline />
+        <Router>
+          <NavBar />
+          {/* <Container maxWidth="md" style={{marginTop:'90px'}}> */}
+          <Container maxWidth="false" style={{marginTop:'90px'}}>
+          <ScrollToTop/>
+          <Switch>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route exact path="/resume">
+              <Resume/>
+            </Route>
+            <Route exact path="/projects">
+              <Projects/>
+            </Route>
+            <Route>
+              <NotFound/>
+            </Route>            
+          </Switch>
+          </Container>
+        </Router>
+      </Theme>
+    </HelmetProvider>
   );
 }

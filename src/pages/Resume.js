@@ -1,6 +1,6 @@
 // Library Imports
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 // Material UI Imports
 import Card from '@material-ui/core/Card';
