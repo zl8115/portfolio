@@ -4,23 +4,23 @@ import { NavLink as RouterNavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 // Material-UI Imports
-import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import IconButton from '@material-ui/core/IconButton';
-import Link from '@material-ui/core/Link';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import { makeStyles } from '@mui/styles';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import Link from '@mui/material/Link';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
 
 // Material-UI Icons
-import AdjustIcon from '@material-ui/icons/Adjust';
-import Brightness4OutlinedIcon from '@material-ui/icons/Brightness4Outlined';
-import Brightness7Icon from '@material-ui/icons/Brightness7';
-import DescriptionIcon from '@material-ui/icons/Description';
-import FolderIcon from '@material-ui/icons/Folder';
-import HomeIcon from '@material-ui/icons/Home';
-import MenuIcon from '@material-ui/icons/Menu';
+import AdjustIcon from '@mui/icons-material/Adjust';
+import Brightness4OutlinedIcon from '@mui/icons-material/Brightness4Outlined';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import DescriptionIcon from '@mui/icons-material/Description';
+import FolderIcon from '@mui/icons-material/Folder';
+import HomeIcon from '@mui/icons-material/Home';
+import MenuIcon from '@mui/icons-material/Menu';
 
 // Context Import
 import { useTheme } from '../../context/Theme';

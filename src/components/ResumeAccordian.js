@@ -2,24 +2,25 @@
 import React from 'react';
 
 // Material UI Imports
-import ExpansionPanel from '@material-ui/core/ExpansionPanel'
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import Typography from '@material-ui/core/Typography';
+import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
+// import Accordion from '@mui/material/Accordion';
+// import AccordionDetails from '@mui/material/AccordionDetails';
+// import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
 
 // Material UI Icon Imports
-import BuildIcon from '@material-ui/icons/Build';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import SchoolIcon from '@material-ui/icons/School';
-import SettingsIcon from '@material-ui/icons/Settings';
-import WorkIcon from '@material-ui/icons/Work';
+import BuildIcon from '@mui/icons-material/Build';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import SchoolIcon from '@mui/icons-material/School';
+import SettingsIcon from '@mui/icons-material/Settings';
+import WorkIcon from '@mui/icons-material/Work';
 
 // MAIN Function
-export default function ResumeAccordian(props){
+export default function ResumeAccordion(props){
   return(
     <>
-      <ExpansionPanel >
-        <ExpansionPanelSummary
+      <Accordion>
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
@@ -28,9 +29,9 @@ export default function ResumeAccordian(props){
             <SchoolIcon/>
             <Typography variant="h6"> &nbsp;&nbsp;<strong>Education</strong></Typography>
           </div>
-        </ExpansionPanelSummary>
+        </AccordionSummary>
 
-        <ExpansionPanelDetails>
+        <AccordionDetails>
           <Typography variant="body" paragraph>
             <strong>MEng Biomedical Engineering (1st Class Honours)</strong>, Imperial College London, United Kingdom
             <br/>            
@@ -95,11 +96,11 @@ export default function ResumeAccordian(props){
               <li>Integrated Living Skills - Commerce and Entrepreneurship: A</li>
             </ul>
           </Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        </AccordionDetails>
+      </Accordion>
 
-      <ExpansionPanel >
-        <ExpansionPanelSummary
+      <Accordion >
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
@@ -108,9 +109,9 @@ export default function ResumeAccordian(props){
             <WorkIcon/>
             <Typography variant="h6"> &nbsp;&nbsp;<strong>Work Experience</strong></Typography>
           </div>
-        </ExpansionPanelSummary>
+        </AccordionSummary>
 
-        <ExpansionPanelDetails>
+        <AccordionDetails>
           <Typography variant="body" paragraph>
             <strong>Software Engineer</strong>, Micro Focus, United Kingdom
             <br/>            
@@ -168,11 +169,11 @@ export default function ResumeAccordian(props){
               <li>Promoted the app to both potential customers and investors. Developed an articulate mindset to persuade and promote the product that best fit the clients' interest.</li>
             </ul>
           </Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        </AccordionDetails>
+      </Accordion>
 
-      <ExpansionPanel >
-        <ExpansionPanelSummary
+      <Accordion >
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
@@ -181,8 +182,8 @@ export default function ResumeAccordian(props){
             <BuildIcon/>
             <Typography variant="h6"> &nbsp;&nbsp;<strong>Engineering Experience</strong></Typography>
           </div>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        </AccordionSummary>
+        <AccordionDetails>
         <Typography variant="body" paragraph>
             <strong>Undergraduate Research Opportunity (UROP) and 4th Year Engineering Individual Project</strong>, Imperial College London, United Kingdom
             <br/>            
@@ -217,11 +218,11 @@ export default function ResumeAccordian(props){
               <li>Exhibited the project at Imperial Festival. Gained experience in public engagement and improved on presentation skills to a general audience.</li>
             </ul>
           </Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        </AccordionDetails>
+      </Accordion>
 
-      <ExpansionPanel >
-        <ExpansionPanelSummary
+      <Accordion >
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3a-content"
           id="panel3a-header"
@@ -230,8 +231,8 @@ export default function ResumeAccordian(props){
             <SettingsIcon/>
             <Typography variant="h6"> &nbsp;&nbsp;<strong>Skills</strong></Typography>
           </div>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        </AccordionSummary>
+        <AccordionDetails>
           <Typography variant="body" paragraph>
             <strong>IT Skills</strong>
             <ul>
@@ -281,8 +282,8 @@ export default function ResumeAccordian(props){
             </ul>
             
           </Typography>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        </AccordionDetails>
+      </Accordion>
       </>
   )
 }

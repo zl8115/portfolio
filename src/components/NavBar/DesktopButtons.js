@@ -4,14 +4,14 @@ import { NavLink as RouterNavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 // Material-UI Imports
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 
 // Material UI Icon SVGs
-import Brightness4OutlinedIcon from '@material-ui/icons/Brightness4Outlined';
-import Brightness7Icon from '@material-ui/icons/Brightness7';
+import Brightness4OutlinedIcon from '@mui/icons-material/Brightness4Outlined';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 // Context Import
 import { useTheme } from '../../context/Theme';

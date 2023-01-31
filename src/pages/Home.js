@@ -3,10 +3,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 // Material UI Imports
-import Card from "@material-ui/core/Card";
-import Typography from "@material-ui/core/Typography";
-import Grid from '@material-ui/core/Grid';
-import { withStyles } from "@material-ui/core";
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
+import Grid from '@mui/material/Grid';
+import { withStyles } from "@mui/styles";
 
 // Asset Imports
 import { profilePic } from "../assets/images/"

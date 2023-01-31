@@ -4,10 +4,10 @@ import { Helmet } from 'react-helmet-async';
 import {Link as RouterLink} from 'react-router-dom';
 
 // Material UI Imports
-import Button from '@material-ui/core/Button';
-import Card from "@material-ui/core/Card";
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
+import Button from '@mui/material/Button';
+import Card from "@mui/material/Card";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 // Asset Imports
 import { HelloThere } from "../assets/images";

@@ -3,19 +3,19 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 // Material UI Imports
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 // Asset Imports
 import { mainPic } from '../assets/images/'
 
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 // Component Imports
 import CareerStepper from '../components/CareerStepper';

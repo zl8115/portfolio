@@ -2,18 +2,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 // Material UI Imports
-import Card from '@material-ui/core/Card';
-import Chip from '@material-ui/core/Chip';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import IconButton from '@material-ui/core/IconButton';
-import Link from '@material-ui/core/Link';
-import Tooltip from '@material-ui/core/Tooltip';
-import Typography from '@material-ui/core/Typography';
+import Card from '@mui/material/Card';
+import Chip from '@mui/material/Chip';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import IconButton from '@mui/material/IconButton';
+import Link from '@mui/material/Link';
+import Tooltip from '@mui/material/Tooltip';
+import Typography from '@mui/material/Typography';
 
 // Material UI Icon Imports
-import GitHubIcon from '@material-ui/icons/GitHub';
-import WebIcon from '@material-ui/icons/Web';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import WebIcon from '@mui/icons-material/Web';
 
 // Context Import
 import { useTheme } from '../context/Theme';

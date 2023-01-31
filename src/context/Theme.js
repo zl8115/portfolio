@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export const ThemeContext = React.createContext();
 
@@ -8,11 +8,11 @@ export default function ({ children }) {
   const defaultDarkTheme = useMediaQuery('(prefers-color-scheme: dark)');
 
   const [darkTheme, setDarkTheme] = useState(defaultDarkTheme);
-  const [theme, setTheme] = useState(createMuiTheme());
+  const [theme, setTheme] = useState(createTheme());
 
   useEffect(
     () => {
-      setTheme(createMuiTheme({
+      setTheme(createTheme({
         overrides: {
           MuiCard: {
             root: {

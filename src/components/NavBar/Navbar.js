@@ -7,15 +7,15 @@ import DesktopButtons from './DesktopButtons';
 import MobileDrawer from './MobileDrawer';
 
 // Material-UI Imports
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
-import Link from '@material-ui/core/Link';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import { makeStyles } from '@mui/styles';
+import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Hidden from '@mui/material/Hidden';
+import Link from '@mui/material/Link';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 // Image Asset Import
 import { ZeLogo } from '../../assets/images';

@@ -2,11 +2,11 @@
 import React from 'react';
 
 // Material UI Imports
-import Step from '@material-ui/core/Step';
-import StepButton from '@material-ui/core/StepButton';
-import StepContent from '@material-ui/core/StepContent';
-import Stepper from '@material-ui/core/Stepper';
-import Typography from '@material-ui/core/Typography';
+import Step from '@mui/material/Step';
+import StepButton from '@mui/material/StepButton';
+import StepContent from '@mui/material/StepContent';
+import Stepper from '@mui/material/Stepper';
+import Typography from '@mui/material/Typography';
 
 function getSteps() {
   const stepList = [
