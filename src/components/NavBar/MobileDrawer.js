@@ -1,5 +1,5 @@
 // Library Imports
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
@@ -23,7 +23,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
 
 // Context Import
-import { useTheme } from '../../context/Theme';
+import { ThemeContext } from '../../context/Theme';
 
 // Component Styling
 const useStyles = makeStyles((theme) => ({
@@ -37,11 +37,11 @@ export default function MobileDrawer(props){
   const classes = useStyles();
   const {navigationKeyPairs} = props;
 
-  const { darkTheme, setDarkTheme } = useTheme(); // Load Theme Context
+  const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext); // Load Theme Context
   
   // Light/Dark Theme Handler Function
   function handleChange(event) {
-    setDarkTheme(!darkTheme);
+    setIsDarkTheme(!isDarkTheme);
   }
 
   // Open/Closed status for mobile drawer menu
@@ -134,10 +134,10 @@ export default function MobileDrawer(props){
           <hr/>
           <ListItem button onClick={() => {handleChange()}}>
             <ListItemIcon>
-              {(darkTheme) ? (<Brightness7Icon/>) : (<Brightness4OutlinedIcon />)}
+              {(isDarkTheme) ? (<Brightness7Icon/>) : (<Brightness4OutlinedIcon />)}
             </ListItemIcon>
             <ListItemText>
-              {(darkTheme) ? ("Dark Theme") : ("Light Theme")}
+              {(isDarkTheme) ? ("Dark Theme") : ("Light Theme")}
             </ListItemText>
           </ListItem>
 

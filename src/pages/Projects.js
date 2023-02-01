@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 // Material UI Imports
@@ -16,7 +16,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WebIcon from '@mui/icons-material/Web';
 
 // Context Import
-import { useTheme } from '../context/Theme';
+import { ThemeContext } from '../context/Theme';
 
 // Data Import
 import projectsData from '../data/projects.json';
@@ -24,10 +24,10 @@ import projectsData from '../data/projects.json';
 // MAIN Function
 export default function Resume(props){
 
-  const { darkTheme } = useTheme(); // Load Theme Context
+  const { isDarkTheme } = useContext(ThemeContext); // Load Theme Context
 
   function chipColor(metaTag){
-    let color = (darkTheme) ? "rgba(255, 255, 255, 0.23)" : "rgba(0, 0, 0, 0.23)";
+    let color = (isDarkTheme) ? "rgba(255, 255, 255, 0.23)" : "rgba(0, 0, 0, 0.23)";
 
     switch(metaTag){
       case 'python':

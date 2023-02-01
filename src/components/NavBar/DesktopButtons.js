@@ -1,5 +1,5 @@
 // Library Imports
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
@@ -14,17 +14,17 @@ import Brightness4OutlinedIcon from '@mui/icons-material/Brightness4Outlined';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 
 // Context Import
-import { useTheme } from '../../context/Theme';
+import { ThemeContext } from '../../context/Theme';
 
 // MAIN Function
 export default function DesktopButtons(props) {
   const { navigationKeyPairs } = props; // Default prop passed from parent component (Navbar.js)
   
-  const { darkTheme, setDarkTheme } = useTheme(); // Load Theme Context
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext); // Load Theme Context
   
   // Light/Dark Theme Handler Function
   function handleChange(event) {
-    setDarkTheme(!darkTheme);
+    toggleDarkMode();
   }
 
   return (
@@ -53,7 +53,7 @@ export default function DesktopButtons(props) {
       <Grid item>
         <Tooltip title="Toggle light/dark theme">
           <IconButton onClick={handleChange}>
-            {(darkTheme) ? (<Brightness7Icon/>) : (<Brightness4OutlinedIcon />)}
+            {(isDarkMode) ? (<Brightness7Icon/>) : (<Brightness4OutlinedIcon />)}
           </IconButton>
         </Tooltip>
       </Grid>
