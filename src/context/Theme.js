@@ -4,7 +4,26 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export const ThemeContext = React.createContext({ isDarkMode: false, toggleDarkMode: () => {} });
 
-export default function ({ children }) {
+const darkTheme = createTheme({
+  palette: {
+    background: {
+      default: '#121212',
+    },
+    mode: 'dark',
+  }
+})
+
+const lightTheme = createTheme({
+  palette: {
+    background: {
+      paper: '#fff',
+      default: '#eee',
+    },
+    mode: 'light',
+  }
+})
+
+export default function Theme ({ children }) {
   const defaultIsDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [isDarkMode, setIsDarkMode] = useState(defaultIsDarkMode);
 
@@ -20,11 +39,7 @@ export default function ({ children }) {
 
   const theme = React.useMemo(
     () => 
-      createTheme({
-        palette: {
-          mode: isDarkMode ? 'dark' : 'light',
-        }
-      })
+      isDarkMode ? darkTheme : lightTheme
     , [isDarkMode]
   );
 
