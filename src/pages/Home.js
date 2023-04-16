@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet-async';
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import Grid from '@mui/material/Grid';
-import { withStyles } from "@mui/styles";
 
 // Asset Imports
 import { profilePic } from "../assets/images/"
@@ -15,32 +14,22 @@ import { profilePic } from "../assets/images/"
 import MeLinks from "../components/MeLinks";
 
 // Component Styling
-const styles = theme => ({
-  headerCard: {
+const HeaderCard = (props) => (
+  <Card sx={{
     height: 'calc(100vh - 124px)',
     margin:"30px",
     padding: "5vw",
     textAlign: "center",
     minHeight: '380px',
     position: 'relative',
-    [theme.breakpoints.down('lg')]:{
-      height: 'auto'
-    },
-  },
-
-  profilePicture: {
-    borderRadius: '50%',
-    width:'80%',
-    maxWidth: '300px',
-    marginTop: '0',
-    margin: '1vw',    
-  }
-})
+    height: {lg: 'auto'},
+  }}>
+    {props.children}
+  </Card>
+)
 
 // MAIN Function
-function Home(props){
-  const { classes } = props;
-
+export default function Home(){
   return(
     <React.Fragment>
       <Helmet>
@@ -51,11 +40,18 @@ function Home(props){
         />
       </Helmet>
 
-      <Card className={classes.headerCard}>
+      <HeaderCard>
         <Grid container alignContent="center" alignItems="center" justify="center" style={{height:"100%", width:'100%'}} >
           
           <Grid item xs={12} lg={4}>
-            <img src={profilePic} className={classes.profilePicture} alt="Ze Rong Lum's Headshot"/>
+            <img src={profilePic} style={{
+                borderRadius: '50%',
+                width:'80%',
+                maxWidth: '300px',
+                marginTop: '0',
+                margin: '1vw',    
+              }} 
+              alt="Ze Rong Lum's Headshot"/>
             <Typography variant="h4">
               <strong>Ze Rong Lum</strong>
             </Typography>
@@ -104,10 +100,7 @@ function Home(props){
           </Grid>
 
         </Grid>
-      </Card>
+      </HeaderCard>
     </React.Fragment>
   )
 }
-
-// Default Export with Component Styling Applied
-export default withStyles(styles)(Home)

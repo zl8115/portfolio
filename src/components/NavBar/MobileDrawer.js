@@ -4,7 +4,6 @@ import { NavLink as RouterNavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 // Material-UI Imports
-import { makeStyles } from '@mui/styles';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
@@ -25,16 +24,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 // Context Import
 import { ThemeContext } from '../../context/Theme';
 
-// Component Styling
-const useStyles = makeStyles((theme) => ({
-  drawerPaper: {
-    width: '300px',
-  }
-}));
-
 // MAIN Function
 export default function MobileDrawer(props){
-  const classes = useStyles();
   const {navigationKeyPairs} = props;
 
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext); // Load Theme Context
@@ -75,8 +66,10 @@ export default function MobileDrawer(props){
         onClose={handleDrawerClose}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
         transformOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-        classes={{
-          paper: classes.drawerPaper,
+        PaperProps={{
+          sx: {
+            width: '300px',
+          }
         }}
       >
         <List>
