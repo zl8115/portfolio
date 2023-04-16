@@ -15,15 +15,17 @@ import MeLinks from "../components/MeLinks";
 
 // Component Styling
 const HeaderCard = (props) => (
-  <Card sx={{
+  <Card sx={(theme) => ({
     height: 'calc(100vh - 124px)',
     margin:"30px",
     padding: "5vw",
     textAlign: "center",
     minHeight: '380px',
     position: 'relative',
-    height: {lg: 'auto'},
-  }}>
+    [theme.breakpoints.down("lg")]: {
+      height: 'auto'
+    }
+  })}>
     {props.children}
   </Card>
 )
