@@ -9,6 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
@@ -28,11 +29,11 @@ import { ThemeContext } from '../../context/Theme';
 export default function MobileDrawer(props){
   const {navigationKeyPairs} = props;
 
-  const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext); // Load Theme Context
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext); // Load Theme Context
   
   // Light/Dark Theme Handler Function
   function handleChange(event) {
-    setIsDarkTheme(!isDarkTheme);
+    toggleDarkMode(!isDarkMode);
   }
 
   // Open/Closed status for mobile drawer menu
@@ -105,7 +106,7 @@ export default function MobileDrawer(props){
                 color="textPrimary"
                 underline="none"
                 activeClassName={activeClassName}
-                smooth={item[1].includes('#')}
+                smooth={item[1].includes('#') ? "true" : undefined}
                 exact
               >
                 <ListItem 
@@ -125,14 +126,14 @@ export default function MobileDrawer(props){
 
           {/* TOGGLE LIGHT/DARK THEME BUTTON */}
           <hr/>
-          <ListItem button onClick={() => {handleChange()}}>
+          <ListItemButton onClick={() => {handleChange()}}>
             <ListItemIcon>
-              {(isDarkTheme) ? (<Brightness7Icon/>) : (<Brightness4OutlinedIcon />)}
+              {(isDarkMode) ? (<Brightness7Icon/>) : (<Brightness4OutlinedIcon />)}
             </ListItemIcon>
             <ListItemText>
-              {(isDarkTheme) ? ("Dark Theme") : ("Light Theme")}
+              {(isDarkMode) ? ("Dark Theme") : ("Light Theme")}
             </ListItemText>
-          </ListItem>
+          </ListItemButton>
 
         </List>
       </Drawer>

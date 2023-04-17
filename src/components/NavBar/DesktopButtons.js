@@ -42,7 +42,7 @@ export default function DesktopButtons(props) {
             color={color}
             variant={variant}
             activeClassName={activeClassName}
-            smooth={item[1].includes('#')}
+            smooth={item[1].includes('#') ? "true" : undefined}
           >
             { item[0] }
           </Button>
