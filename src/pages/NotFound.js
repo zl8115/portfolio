@@ -30,28 +30,14 @@ export default function NotFound() {
           404 <br/> Hello There!
         </Typography>
         <Typography variant="h5">
-          I see you're somewhere you're not supposed to be at.
-          <br/>
-          Let's bring you back...
-          <br/>
-          You naughty child...
+          I see you're somewhere you're not supposed to be at
           <br/><br/>
           <Button
             variant="contained"
             component={RouterLink}
             to="/"
-            color="primary"
           >
             Go Back!
-          </Button>
-          <br/> <br/>
-          <Button
-            variant="contained"
-            component={RouterLink}
-            to="/"
-            color="secondary"
-          >
-            Nah!
           </Button>
         </Typography>
       </Card>
