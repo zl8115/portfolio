@@ -76,7 +76,7 @@ export default function Home(){
               At the moment, there is not a lot of content but hopefully this will continue to be developed over time. In the meantime, feel free to explore the website. You can also navigate the website using the interactive terminal below.
               <br/><br/>
             </Typography>
-            <Typography variant="h6">The ZeTerminal</Typography>
+            <Typography variant="h6">Ze Terminal</Typography>
             <hr/>
             <ZeTerminal/>
             

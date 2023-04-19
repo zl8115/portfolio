@@ -1,7 +1,9 @@
+// Library Imports
 import React, { useContext, useMemo } from 'react'
 import { ReactTerminal } from "react-terminal";
+
+// Component Imports
 import { navigationKeyPairs } from "./NavBar/Navbar"
-import { Redirect } from 'react-router-dom';
 
 // Context Import
 import { ThemeContext } from '../context/Theme';
