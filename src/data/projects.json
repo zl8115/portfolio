@@ -1,5 +1,15 @@
 [
   {
+    "title": "Personal Portfolio",
+    "description": "Last Updated 19/4/2023",
+    "image": "Portfolio.PNG",
+    "link": "https://www.zeronglum.com",
+    "webLink": "https://www.zeronglum.com",
+    "gitLink": "https://github.com/zl8115/portfolio",
+    "meta": ["React.js"],
+    "content": "The repository for this portfolio website that uses <strong>React.js</strong>. This website was made as a quick portfolio and React.js development project. Hopefully as I update this site, there will be a wider display of skills and creativity."
+  },
+  {
     "title": "Kaggle's Titanic: Machine Learning From Disaster Challenge",
     "description": "Last Updated 23/9/2020",
     "image": "titanic.jpg",
@@ -12,20 +22,8 @@
     "title": "Elize.io Website",
     "description": "Last Updated 13/7/2020",
     "image": "Elize.png",
-    "link": "https://elize.io/",
-    "webLink": "https://elize.io/",
     "meta": ["React.js", "Express.js", "REST API"],
-    "content": "This is the website and product of the startup, Elize.io, that I worked on. The website was designed using <strong>React.js</strong> and consumes the data from a <strong>Express.js-powered REST API</strong>. This is deployed using a <strong>Docker</strong> container on an <strong>AWS EC2</strong> instance.<br/><br/>Furthermore, behind the scenes there is a <strong>Flask-powered REST API</strong> that performs the <strong>Natural Language Processing (NLP) Summarization &amp; Topic Classification Tasks</strong>. This API also handles audio data conversion and document formatting."
-  },
-  {
-    "title": "Personal Portfolio",
-    "description": "Last Updated 23/9/2020",
-    "image": "Portfolio.PNG",
-    "link": "https://www.zeronglum.com",
-    "webLink": "https://www.zeronglum.com",
-    "gitLink": "https://github.com/zl8115/portfolio",
-    "meta": ["React.js"],
-    "content": "The repository for this portfolio website that uses <strong>React.js</strong>. This website was made as a quick way to showcase my projects and my ability as a web developer. Hopefully as I update this site, there will be a wider display of my skills. <br/><br/> This repository will attempt to display some demonstration of <strong>API consumption</strong> by mimicking <em>json</em> data to dynamically \"alter\" the content of this page."
+    "content": "[NO LONGER AVAILABLE] This was the website and product of the startup, Elize.io, that I worked on. The website was designed using <strong>React.js</strong> and consumes the data from a <strong>Express.js-powered REST API</strong>. This is deployed using a <strong>Docker</strong> container on an <strong>AWS EC2</strong> instance.<br/><br/>Furthermore, behind the scenes there is a <strong>Flask-powered REST API</strong> that performs the <strong>Natural Language Processing (NLP) Summarization &amp; Topic Classification Tasks</strong>. This API also handles audio data conversion and document formatting."
   },
   {
     "title": "ICKC Website",
