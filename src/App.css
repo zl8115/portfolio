@@ -37,6 +37,10 @@
   }
 }
 
+.Typewriter {
+  display: inline
+}
+
 .nav-selected {
   color: #EBC400 !important;
 }

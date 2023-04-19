@@ -22,6 +22,7 @@ import { ZeLogo } from '../../assets/images';
 // Navigation Link Name and Route Key Pairs
 export const navigationKeyPairs = [
   ["Home", "/"],
+  ["About Me", "/aboutme"],
   ["Resume", "/resume"],
   ["Projects", "/projects"],
 ]

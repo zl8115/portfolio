@@ -1,0 +1,51 @@
+.ProgrammerBlock
+{
+    font-family: 'inconsolata';
+}
+
+div.ProgrammerBlock
+{
+    margin: 15px;
+}
+
+.ProgrammerBlock .Window
+{
+    border-radius: 5px;
+}
+
+.ProgrammerBlock .WindowBody
+{
+    padding: 5px 15px;
+}
+
+.ProgrammerBlock .WindowBottom
+{
+    height: 20px;
+    background-color: #007acc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ProgrammerBlock .ControlBar
+{
+    height: 26px;
+    margin-left: 4px;
+    top: 4px;
+    position: relative
+}
+
+.ProgrammerBlock .ControlBar .ControlButton
+{
+    display: inline-block; 
+    width: 13px;
+    height: 13px;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+
+.ProgrammerBlock .ControlBar .Text
+{
+    display: inline-block;
+    width: calc(100% - 122px);
+    text-align: center;
+}

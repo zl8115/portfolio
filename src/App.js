@@ -16,6 +16,7 @@ import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
+import AboutMe from './pages/AboutMe';
 
 // Component Imports
 import NavBar from './components/NavBar';
@@ -38,6 +39,9 @@ export default function App() {
             <Switch>
               <Route exact path="/">
                 <Home/>
+              </Route>
+              <Route exact path="/aboutme">
+                <AboutMe/>
               </Route>
               <Route exact path="/resume">
                 <Resume/>
