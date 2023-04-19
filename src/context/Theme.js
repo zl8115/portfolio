@@ -4,22 +4,38 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export const ThemeContext = React.createContext({ isDarkMode: false, toggleDarkMode: () => {} });
 
+const commonThemeSettings = {
+  palette: {
+    primary: {
+      main: '#EBC400',
+    },
+    secondary: {
+      main: '#a08f65',
+    },
+    error: {
+      main: '#fc8c79',
+    },
+  },
+}
+
 const darkTheme = createTheme({
   palette: {
+    mode: 'dark',
     background: {
       default: '#121212',
     },
-    mode: 'dark',
+    ...commonThemeSettings['palette']
   }
 })
 
 const lightTheme = createTheme({
   palette: {
+    mode: 'light',
     background: {
       paper: '#fff',
       default: '#eee',
     },
-    mode: 'light',
+    ...commonThemeSettings['palette']
   }
 })
 
