@@ -28,24 +28,6 @@ export default function MeLinks(){
         </IconButton>
       </Tooltip>
 
-      <Tooltip title="Facebook Profile">
-        <IconButton href="https://www.facebook.com/zerong96">
-          <FacebookIcon/>
-        </IconButton>
-      </Tooltip>
-
-      <Tooltip title="Instagram Profile">
-        <IconButton href="https://www.instagram.com/zerg_lum/">
-          <InstagramIcon/>
-        </IconButton>
-      </Tooltip>
-      
-      <Tooltip title="YouTube Gaming Channel">
-        <IconButton href="https://www.youtube.com/channel/UCZfHlEteLxb4YlBRgSqGBjA">
-          <YouTubeIcon/>
-        </IconButton>
-      </Tooltip>
-
       <Tooltip title="Email">
         <IconButton href="mailto:ze.rong96@gmail.com">
           <EmailIcon/>

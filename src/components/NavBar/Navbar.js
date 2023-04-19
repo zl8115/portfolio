@@ -19,6 +19,12 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 // Image Asset Import
 import { ZeLogo } from '../../assets/images';
 
+// Navigation Link Name and Route Key Pairs
+export const navigationKeyPairs = [
+  ["Home", "/"],
+  ["Resume", "/resume"],
+  ["Projects", "/projects"],
+]
 
 // MAIN Function
 export default function Navbar(props) {
@@ -26,13 +32,6 @@ export default function Navbar(props) {
     disableHysteresis: true,
     threshold: 0
   });
-
-  // Navigation Link Name and Route Key Pairs
-  const navigationKeyPairs = [
-    ["Home", "/"],
-    ["Resume", "/resume"],
-    ["Projects", "/projects"]
-  ]
   
   return (
     <AppBar color="inherit" elevation={trigger ? 4 : 0}>

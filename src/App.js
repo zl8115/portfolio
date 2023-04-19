@@ -8,6 +8,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 
 // Context Imports
+import { TerminalContextProvider } from "react-terminal";
 import Theme from './context/Theme';
 
 // Pages Imports
@@ -29,27 +30,28 @@ export default function App() {
     <HelmetProvider>
       <Theme>
         <CssBaseline />
-        <Router>
-          <NavBar />
-          {/* <Container maxWidth="md" style={{marginTop:'90px'}}> */}
-          <Container maxWidth="false" style={{marginTop:'90px'}}>
-          <ScrollToTop/>
-          <Switch>
-            <Route exact path="/">
-              <Home/>
-            </Route>
-            <Route exact path="/resume">
-              <Resume/>
-            </Route>
-            <Route exact path="/projects">
-              <Projects/>
-            </Route>
-            <Route>
-              <NotFound/>
-            </Route>            
-          </Switch>
-          </Container>
-        </Router>
+        <TerminalContextProvider>
+          <Router>
+            <NavBar />
+            <Container maxWidth="false" style={{marginTop:'90px'}}>
+            <ScrollToTop/>
+            <Switch>
+              <Route exact path="/">
+                <Home/>
+              </Route>
+              <Route exact path="/resume">
+                <Resume/>
+              </Route>
+              <Route exact path="/projects">
+                <Projects/>
+              </Route>
+              <Route>
+                <NotFound/>
+              </Route>            
+            </Switch>
+            </Container>
+          </Router>
+        </TerminalContextProvider>
       </Theme>
     </HelmetProvider>
   );
