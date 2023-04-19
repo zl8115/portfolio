@@ -19,6 +19,65 @@ import WorkIcon from '@mui/icons-material/Work';
 export default function ResumeAccordion(props){
   return(
     <>
+      <Accordion >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <div style={{display: 'flex', alignItems:'center'}}>
+            <WorkIcon/>
+            <Typography variant="h6"> &nbsp;&nbsp;<strong>Work Experience</strong></Typography>
+          </div>
+        </AccordionSummary>
+
+        <AccordionDetails>
+          <Typography variant="body">
+            <strong>Software Engineer</strong>, OpenText (formerly Micro Focus, United Kingdom
+            <br/>            
+            <em>January 2021 - Present</em>
+            <br/>
+            <ul>
+              <li>Worked in IDOL KeyView, a document file reader and extraction software specializing in file format detection; decryption; and subfile, metadata and text extraction.</li>
+              <li>Developed and maintained Software Development Kits in C/C++ used in low latency, high availability and high throughput application on various platforms like Windows, Linux and MacOS.</li>
+              <li>Improved the C API interface for the FilterSDK product, streamlining customer workflow by unifying operations from a stream or file source and enabling cross-functionality between the modes.</li>
+              <li>Optimized extracting text from Open Document Spreadsheet (.ods) files by profiling the reader and introducing a caching mechanism to reduce unnecessary overhead, reducing process time by 70%.</li>
+              <li>Improved DevOps practices by introducing git worktree and developing various inhouse scripts, saving up to 36 hours per release cycle while improving reliability and resilience.</li>
+              <li>Proposed and led a multi-stage project to improve the Jenkins CI/CD system with a potential to reduce lead time by 40%; deployment time by 50%; and error rates by 15%.</li>
+            </ul>
+
+            <strong>Full Stack Developer</strong>, Elize.io, United Kingdom
+            <br/>            
+            <em>October 2019 - August 2020</em>
+            <br/>
+            <ul>
+              <li>Full-stack development using a MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+              <li>Developed a Flask API that acts as an NLP Summarizer and Topic Classifier that summarizes documents into topics and bullet points.</li>
+              <li>Technology used: Docker, AWS EC2 &amp; ECR; Google Speech-to-Text, Analytics &amp; Cloud Storage;</li>
+              <li>Actively engaged with customers to deliver customer focused solutions.</li>
+            </ul>
+
+            <strong>Undergraduate Teaching Assistant</strong>, Imperial College London, United Kingdom
+            <br/>            
+            <em>2017 - 2019</em>
+            <br/>
+            <ul>
+              <li>Assisted in tutoring 1st and 2nd year students to code in C and C++ (Programming 1 and 2 modules)</li>
+            </ul>
+
+            <strong>Technology Project Manager</strong>, Awetrip, Malaysia/United Kingdom
+            <br/>            
+            <em>July 2017 - June 2018</em>
+            <br/>
+            <ul>
+              <li>Developed the main web platform using a LAMP (Laravel, Apache, MySQL, PHP) stack.</li>
+              <li>The startup participated and won 1st place in iCUBE's CIPTA UK 2017 event that resulted in gaining the support of Cradle Fund Sdn Bhd, 1337 Ventures and Khazanah Nasional Bhd.</li>
+            </ul>
+
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -32,7 +91,7 @@ export default function ResumeAccordion(props){
         </AccordionSummary>
 
         <AccordionDetails>
-          <Typography variant="body" paragraph>
+          <Typography variant="body">
             <strong>MEng Biomedical Engineering (1st Class Honours)</strong>, Imperial College London, United Kingdom
             <br/>            
             <em>October 2015 - June 2019</em>
@@ -102,79 +161,6 @@ export default function ResumeAccordion(props){
       <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <div style={{display: 'flex', alignItems:'center'}}>
-            <WorkIcon/>
-            <Typography variant="h6"> &nbsp;&nbsp;<strong>Work Experience</strong></Typography>
-          </div>
-        </AccordionSummary>
-
-        <AccordionDetails>
-          <Typography variant="body" paragraph>
-            <strong>Software Engineer</strong>, Micro Focus, United Kingdom
-            <br/>            
-            <em>January 2021 - Present</em>
-            <br/>
-            <ul>
-              <li>Develop and maintain code in C/C++.</li>
-              <li>Maintaining and upgrading legacy code.</li>
-              <li>Develop new readers to add support for new file formats.</li>
-            </ul>
-
-            <strong>Full Stack Engineer</strong>, Elize.io, United Kingdom
-            <br/>            
-            <em>October 2019 - August 2020</em>
-            <br/>
-            <ul>
-              <li>Full-stack development using a MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
-              <li>Developed a Flask API that acts as an NLP Summarizer and Topic Classifier that summarizes documents into topics and bullet points.</li>
-              <li>Technology used: Docker, AWS EC2 &amp; ECR; Google Speech-to-Text, Analytics &amp; Cloud Storage;</li>
-              <li>Customer development: interviewed customers directly to identify customer needs.</li>
-            </ul>
-
-            <strong>Undergraduate Teaching Assistant</strong>, Imperial College London, United Kingdom
-            <br/>            
-            <em>2017 - 2019</em>
-            <br/>
-            <ul>
-              <li>Helped tutor 1st and 2nd year students to code in C and C++ programming (Programming 1 and 2 modules)</li>
-            </ul>
-
-            <strong>Technology Project Manager</strong>, Awetrip, Malaysia/United Kingdom
-            <br/>            
-            <em>July 2017 - June 2018</em>
-            <br/>
-            <ul>
-              <li>Co-founded Awetrip and led the technology team of 3 to develop the web application.</li>
-              <li>Developed the main web platform using a LAMP (Laravel, Apache, MySQL, PHP) stack.</li>
-              <li>Deployed and maintained a WordPress blog on a subdomain for marketing.</li>
-              <li>Participated and won 1st place in iCUBE's CIPTA UK 2017 event that resulted in gaining the support of Cradle Fund Sdn Bhd, 1337 Ventures and Khazanah Nasional Bhd.</li>
-            </ul>
-
-            <strong>Cashier</strong>, De Market, Malaysia
-            <br/>            
-            <em>Aug 2016 - Sept 2016</em>
-            <br/>
-            <ul>
-              <li>Developed skills in task management, decision-making skills and working under pressure. Operated both the scanning and bagging of items in an accurate and efficient manner to maintain customer satisfaction and streamline the paying process.</li>
-            </ul>
-
-            <strong>Promoter</strong>, Adz, Malaysia
-            <br/>            
-            <em>July 2016</em>
-            <br/>
-            <ul>
-              <li>Promoted the app to both potential customers and investors. Developed an articulate mindset to persuade and promote the product that best fit the clients' interest.</li>
-            </ul>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
@@ -184,7 +170,7 @@ export default function ResumeAccordion(props){
           </div>
         </AccordionSummary>
         <AccordionDetails>
-        <Typography variant="body" paragraph>
+        <Typography variant="body">
             <strong>Undergraduate Research Opportunity (UROP) and 4th Year Engineering Individual Project</strong>, Imperial College London, United Kingdom
             <br/>            
             <em>July 2018 - June 2019</em>
@@ -233,7 +219,7 @@ export default function ResumeAccordion(props){
           </div>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography variant="body" paragraph>
+          <Typography variant="body">
             <strong>IT Skills</strong>
             <ul>
               <li>Microsoft Excel and other Office packages.</li>

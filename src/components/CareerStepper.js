@@ -7,14 +7,12 @@ import StepButton from '@mui/material/StepButton';
 import StepContent from '@mui/material/StepContent';
 import Stepper from '@mui/material/Stepper';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 function getSteps() {
   const stepList = [
-    'Jan 2021 - Present: Work',
-    'Oct 2019 - Aug 2020: Work',
-    'Oct 2015 - Jun 2019: Studies',
-    'Sep 2012 - Jul 2015: Studies',
-    'Jan 2009 - Jun 2012: Studies'
+    'Jan 2021 - Present',
+    'Oct 2019 - Aug 2020'
   ]
   return stepList;
 }
@@ -25,12 +23,6 @@ function getStepTitle(step) {
       return `Software Engineer`;
     case 1:
       return `Product Lead & Co-Founder`;
-    case 2:
-      return `MEng in Biomedical Engineering`;
-    case 3:
-      return `International Baccalaurreate & IGCSE`;
-    case 4:
-      return `Lower Secondary Assessment (PMR)`;
     default:
       return 'ERROR LOCATION';
   }
@@ -39,15 +31,9 @@ function getStepTitle(step) {
 function getStepLocation(step){
   switch(step) {
     case 0:
-      return `MICRO FOCUS, UNITED KINGDOM`;
+      return `OpenText (FORMERLY MICRO FOCUS), UNITED KINGDOM`;
     case 1:
       return `ELIZE.IO, UNITED KINGDOM`;
-    case 2:
-      return `IMPERIAL COLLEGE LONDON, UNITED KINGDOM`;
-    case 3:
-      return `WINDERMERE SCHOOL, UNITED KINGDOM`;
-    case 4:
-      return `VICTORIA INSTITUTION, MALAYSIA`;
     default:
       return 'ERROR LOCATION';
   }
@@ -56,17 +42,17 @@ function getStepLocation(step){
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return 'My role at Micro Focus as a Software Enginner is to develop and maintain code primarily in C/C++. I have learned a lot about the Software Development Life Cycle and best practices when coding with new and legacy code.'
+      return (<React.Fragment>
+        At OpenText, I worked on <Link href="https://www.microfocus.com/en-us/products/file-viewer-filter/overview" underline="always" color="inherit">IDOL KeyView</Link>, a document file reader and extraction software that specializes in file format detection; decryption; and subfile and text extraction of over 1500 file formats. My role in this team is to develop and maintain the Software Development Kits used in low latency, high availability and high throughput application on various platforms like Windows, Linux and MacOS. In this role, I have gained invaluable experience in C/C++ development on Windows on a large code base with legacy code.
+      </React.Fragment>)
     case 1:
-      return `My main duties in Elize.io is as a Full Stack Engineer and Machine Learning Engineer. I worked with developing the web application and building the Natural Language Processing (NLP) models used in the backend. The technology used are JavaScript, Express, React, Node, Python, MongoDB, Docker, AWS web deployment and Google Cloud Services`;
-    case 2:
-      return `During the 3rd and 4th (final) year of the 4-year undergraduate course, I had chosen the Electrical and Electronic (EE) stream which exposed me to statistical analysis techniques and methods. Amongst the modules I took were: Adaptive Signal Processing and Machine Intelligence; Advanced Signal Processing; Digital Biosignal Processing; Optimization; Pattern Recognition.`;
-    case 3:
-      return `I was given the opportunity to study in the UK at an earlier stage. This allowed me to develop a more International perspective of the world. This unique blend of education from Malaysia and United Kingdom gives me a unique perspective to the world.`;
-    case 4:
-      return `This was where I spent most of my secondary school education excluding the final year and a half. It was during these years that I developed most of my traits and virtues and even embodying the school motto of "To Be Yet Wiser; To Be a Scholar, Sportsman and a Gentleman". As a result, I am humble, focused, hardworking and curious.`;
+      return (<React.Fragment>
+        I co-founded a startup, Elize.io, to develop to provide automated transcription and summarisation. As Product Lead, my main role was more akin to a Full Stack Developer and Machine Learning Engineer to develop the web platform and technology stack used to perform automated transcription and summarisation. This allowed me to develop my programming skills in Python, React and Node.js while expanding my systems engineer knowledge with Docker, AWS and Google Cloud Services. This opportunity also required me to get a deeper understanding of Natural Language Processing and expand my knowledge on machine learning. However, through my other role as co-founder, I was able to develop much more valuable insights on company operations, such as product management, communication and providing value to customers. Whilst, this startup did not succeed and has since dissolved, this experience has provided me with a unique and invalueable experience to have a more holistic approach when delivering solutions.
+      </React.Fragment>);
     default:
-      return 'Unknown step';
+      return (<React.Fragment>
+        Unknown step
+      </React.Fragment>);
   }
 }
 

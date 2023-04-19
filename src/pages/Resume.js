@@ -59,9 +59,7 @@ export default function Resume(props){
 
         <CardActions style={{justifyContent:"center"}}>
           <Button
-            className="btn btn-primary"
-            href={"https://drive.google.com/file/d/1zkI-YfqIpSY3YBfAZa-U7nsbw6cA-Mq2/view?usp=sharing"}
-            color="primary"
+            href={"https://drive.google.com/file/d/1_TDklKb34HJTb6NFRVMpmCrALB3Utaxg/view?usp=share_link"}
             variant="contained"
           >
             <CloudDownloadIcon/> &nbsp; Download PDF Version
