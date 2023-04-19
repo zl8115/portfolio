@@ -85,11 +85,11 @@ export default function AboutMe(){
           <Card style={{borderRadius: '10px'}}>
             <CardMedia
               component="img"
-              alt="Pa-Jeon"
+              alt="Pajeon"
               image={Food2}
             />
             <CardContent sx={{textAlign: 'center'}}>
-              Korean Pa-Jeon Vegetable Pancake
+              Korean Pajeon Pancake
             </CardContent>
           </Card>
         </Grid>

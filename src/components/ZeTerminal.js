@@ -94,7 +94,7 @@ export default function ZeTerminal(props) {
   const full_commands={
     ...custom_commands,
     help: ["help", "clear"].concat(Object.keys(custom_commands).sort()).join(" "),
-  }
+    }
 
   return (
     <ReactTerminal
@@ -104,7 +104,8 @@ export default function ZeTerminal(props) {
        [isDarkMode]
       )}
       commands={full_commands}
-      
+      errorMessage="command not found. Type 'help' for a list of available commands"
+      welcomeMessage={<>Welcome to ZeTerminal v1.0<br/></>}
     />
   );
 }
