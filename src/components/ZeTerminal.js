@@ -88,7 +88,8 @@ export default function ZeTerminal(props) {
     ls: localSubpages.join(" "),
     cd: cd_command,
     more: more_command,
-    toggleDarkMode: () => {toggleDarkMode(!isDarkMode)}
+    toggleDarkMode: () => {toggleDarkMode(!isDarkMode)},
+    exit: () => {props.setTerminalOpen(false);}
   }
   
   const full_commands={

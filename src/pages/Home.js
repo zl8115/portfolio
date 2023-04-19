@@ -13,6 +13,7 @@ import { profilePic } from "../assets/images/"
 // Component Imports
 import MeLinks from "../components/MeLinks";
 import ZeTerminal from "../components/ZeTerminal";
+import { Button } from '@mui/material';
 
 // Component Styling
 const HeaderCard = (props) => (
@@ -33,6 +34,8 @@ const HeaderCard = (props) => (
 
 // MAIN Function
 export default function Home(){
+  const [isTerminalOpen, setTerminalOpen] = React.useState(false);
+
   return(
     <React.Fragment>
       <Helmet>
@@ -67,18 +70,30 @@ export default function Home(){
             <MeLinks />
           </Grid>
 
-          <Grid item xs={12} lg={6} style={{textAlign:'left'}}>
-            <Typography variant="h3">Welcome</Typography>
+          <Grid item xs={12} lg={6}>
+            <div style={{display: isTerminalOpen ? 'none' : 'block'}}>
+            <Typography variant="h3" align='left'>Welcome</Typography>
             <hr/>
-            <Typography variant="h5" paragraph>
+            <Typography variant="h5" align='left'>
               This is the personal portfolio of Ze Rong Lum, a programmer by profession and an engineer by training. Besides a portfolio, this website is also used as a platform to explore React.js and my creativity.
               <br/><br/>
               At the moment, there is not a lot of content but hopefully this will continue to be developed over time. In the meantime, feel free to explore the website. You can also navigate the website using the interactive terminal below.
               <br/><br/>
             </Typography>
-            <Typography variant="h6">Ze Terminal</Typography>
+            <Button 
+              style={{textAlign: 'center'}}
+              variant="contained"
+              onClick={() => {setTerminalOpen(true);}}
+            >
+              Activate Ze Terminal
+            </Button>
+            </div>
+
+            <div style={{display: !isTerminalOpen ? 'none' : 'block'}}>
+            <Typography variant="h3">Ze Terminal</Typography>
             <hr/>
-            <ZeTerminal/>
+            <ZeTerminal setTerminalOpen={setTerminalOpen}/>
+            </div>
             
           </Grid>
 
