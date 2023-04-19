@@ -27,8 +27,10 @@ npm run build
 ```
 
 ## Future Improvements
+- Expand the 'About Me' section.
+- Rework 'Projects' page to a blog to allow for a wider variety of topics rather and more explanation.
+- Extend ZeTerminal with more commands and have it available on all pages.
 - Convert Resume data into a consumable JSON file.
+- Better theming.
 - Add meta tags and sorting filters to Project page (and Resume page later).
-- Expand the 'interactions' of Error 404 Page Not Found.
-- Add highlighted projects
 - (Maybe) Get the JSON data from an online source (not repository dependent).
